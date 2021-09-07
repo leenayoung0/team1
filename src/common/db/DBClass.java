@@ -14,6 +14,6 @@ public class DBClass {//연결만 하는 역할
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		
 	}
 }

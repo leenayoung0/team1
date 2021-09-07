@@ -3,7 +3,6 @@ package main;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
@@ -13,7 +12,7 @@ import login.LoginServiceImpl;
 import member.MemberDTO;
 import javafx.scene.control.Alert.AlertType;
 
-public class MainController implements Initializable{
+public class MainController implements Initializable {
 	Parent root;
 	public static DBClass db;
 	public common.db.DBClass comDB;//공통사용
@@ -52,9 +51,10 @@ public class MainController implements Initializable{
 		ls.loginChk(root);
 		
 	}
+
 	public void setRoot(Parent root) {
-		this.root=root;
-		
+		this.root = root;
+
 	}
 
 }

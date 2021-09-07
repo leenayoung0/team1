@@ -5,17 +5,16 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="270.0" prefWidth="578.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="main.MainController">
+<AnchorPane prefHeight="270.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
    <children>
-      <TextField fx:id="fxid" layoutX="404.0" layoutY="69.0" />
+      <TextField fx:id="fxId" layoutX="404.0" layoutY="69.0" />
       <Button layoutX="95.0" layoutY="223.0" mnemonicParsing="false" text="UPDOWN" />
       <Button layoutX="202.0" layoutY="223.0" mnemonicParsing="false" text="가위바위보" />
       <Button layoutX="308.0" layoutY="223.0" mnemonicParsing="false" text="아이템 뽑기" />
       <Button layoutX="420.0" layoutY="223.0" mnemonicParsing="false" text="끝말잇기" />
       <Label layoutX="342.0" layoutY="73.0" text="ID" />
       <Label layoutX="321.0" layoutY="111.0" text="Password" />
-      <TextField fx:id="fxpw" layoutX="404.0" layoutY="107.0" />
+      <TextField fx:id="fxPwd" layoutX="404.0" layoutY="107.0" />
       <Button layoutX="500.0" layoutY="153.0" mnemonicParsing="false" onAction="#login" prefHeight="23.0" prefWidth="64.0" text="로그인" />
       <Label layoutX="24.0" layoutY="126.0" text="name" />
       <TextField fx:id="memberName" layoutX="96.0" layoutY="122.0" />
