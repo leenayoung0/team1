@@ -16,7 +16,7 @@ public class DBClass {
 			// 자바에서 오라클을 연결하기 위한 기타 기능들을 쓸 수 있게 라이브러리 등록
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			// 오라클과 연결된 객체를 가져온다.
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "java", "java");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@210.221.253.215:1521:xe", "team1", "1234");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
