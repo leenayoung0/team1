@@ -5,12 +5,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="270.0" prefWidth="578.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="main.MainController">
+<AnchorPane prefHeight="270.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
    <children>
       <TextField fx:id="fxid" layoutX="404.0" layoutY="69.0" />
       <Button layoutX="95.0" layoutY="223.0" mnemonicParsing="false" text="UPDOWN" />
-      <Button layoutX="202.0" layoutY="223.0" mnemonicParsing="false" text="가위바위보" />
+      <Button layoutX="202.0" layoutY="223.0" mnemonicParsing="false" onAction="#playG2" text="가위바위보" />
       <Button layoutX="308.0" layoutY="223.0" mnemonicParsing="false" text="아이템 뽑기" />
       <Button layoutX="420.0" layoutY="223.0" mnemonicParsing="false" text="끝말잇기" />
       <Label layoutX="342.0" layoutY="73.0" text="ID" />

@@ -3,7 +3,7 @@ package main;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-
+import game2.Game2;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
@@ -18,6 +18,7 @@ public class MainController implements Initializable{
 	public static DBClass db;
 	public common.db.DBClass comDB;//공통사용
 	private LoginService ls;
+	private Game2 g2;
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -52,6 +53,11 @@ public class MainController implements Initializable{
 		ls.loginChk(root);
 		
 	}
+	
+	public void playG2() {
+		g2.display();
+	}
+	
 	public void setRoot(Parent root) {
 		this.root=root;
 		
