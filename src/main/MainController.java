@@ -12,6 +12,7 @@ import login.LoginService;
 import login.LoginServiceImpl;
 import member.MemberDTO;
 import javafx.scene.control.Alert.AlertType;
+import game1.UpDownGame;
 
 public class MainController implements Initializable{
 	Parent root;
@@ -51,6 +52,11 @@ public class MainController implements Initializable{
 	public void login() {// 만약 로그인 기능을 다른사람이 만드다는 가정하에
 		ls.loginChk(root);
 		
+	}
+	
+	public void game1() {
+		UpDownGame ud = new UpDownGame();
+		ud.display();
 	}
 	public void setRoot(Parent root) {
 		this.root=root;
