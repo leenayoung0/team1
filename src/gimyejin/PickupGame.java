@@ -39,8 +39,8 @@ public class PickupGame extends Print {
 			} else if (check.equals("2")) {
 				System.out.println("잔액 부족으로 메인화면으로 이동합니다.");
 				System.out.println("==============================\n");;
-				MainClass mc = new MainClass();
-				mc.main(null);
+				//MainClass mc = new MainClass();
+				//mc.main(null);
 				
 			} else {
 				System.out.println("1번과 2번 중 골라주세요.\n");

@@ -3,6 +3,7 @@ package main;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import gimyejin.PickMain;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
@@ -57,7 +58,9 @@ public class MainController implements Initializable {
 
 	}
 	public void pickup() {
-		
+		System.out.println("snf");
+		PickMain pm = new PickMain();
+		pm.pick(root);
 	}
 
 }
