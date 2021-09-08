@@ -3,6 +3,7 @@ package main;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import common.db.AlertClass;
 import gimyejin.PickMain;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -16,14 +17,15 @@ import javafx.scene.control.Alert.AlertType;
 public class MainController implements Initializable {
 	Parent root;
 	public static DBClass db;
-	public common.db.DBClass comDB;//공통사용
+	public common.db.DBClass comDB;// 공통사용
 	private LoginService ls;
-
+	boolean chk;
+	AlertClass alert;
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		db = new DBClass();
-		comDB = new common.db.DBClass();//다른사람들과 공통으로 사용하는 부분
-		ls= new LoginServiceImpl();
+		comDB = new common.db.DBClass();// 다른사람들과 공통으로 사용하는 부분
+		ls = new LoginServiceImpl();
 	}
 
 	public void membership() {
@@ -48,19 +50,26 @@ public class MainController implements Initializable {
 		}
 	}
 
-	public void login() {// 만약 로그인 기능을 다른사람이 만드다는 가정하에
-		ls.loginChk(root);
-		
+	public boolean login() {// 만약 로그인 기능을 다른사람이 만드다는 가정하에
+		chk = ls.loginChk(root);
+		return chk;
 	}
 
 	public void setRoot(Parent root) {
 		this.root = root;
 
 	}
+
 	public void pickup() {
-		PickMain pm = new PickMain();
-		//pm.pick();
-		pm.pickmode();
+		if (chk == true) {
+			PickMain pm = new PickMain(root);
+			// pm.pick();
+
+			pm.pickmode();
+		}else {
+			alert.atler("로그인을 하시오");
+		}
+
 	}
 
 }

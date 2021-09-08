@@ -20,6 +20,7 @@ public class PickController implements Initializable{
 	}
 	public void pickup() {
 		//뽑기 버튼
+		System.out.println("뽑기");
 	}
 	public void item() {
 		//소지한 아이템 출력 버튼
