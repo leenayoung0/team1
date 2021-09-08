@@ -58,9 +58,9 @@ public class MainController implements Initializable {
 
 	}
 	public void pickup() {
-		System.out.println("snf");
 		PickMain pm = new PickMain();
-		pm.pick(root);
+		//pm.pick();
+		pm.pickmode();
 	}
 
 }
