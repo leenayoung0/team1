@@ -7,11 +7,11 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class PickMain {
-	Parent root;//회원로그인한 root임
+	Parent user;//회원로그인한 root임
 	String nowid ;
-	public  PickMain(Parent root) {
-		this.root=root;
-		TextField id = (TextField) root.lookup("#fxId");
+	public  PickMain(Parent user) {
+		this.user=user;
+		TextField id = (TextField) user.lookup("#fxId");
 		nowid=id.getText();
 		
 	}
@@ -26,11 +26,12 @@ public class PickMain {
 			Stage primaryStage = new Stage();
 			FXMLLoader loader = 
 					new FXMLLoader(getClass().getResource("game.fxml"));
-			Parent root2 = loader.load();
-			Scene scene = new Scene(root2);
+			Parent root = loader.load();
+			Scene scene = new Scene(root);
 			
 			PickController ctl = loader.getController();
-			ctl.setRoot(root2);
+			ctl.setRoot(root);
+			ctl.setName(nowid);
 			
 			primaryStage.setScene(scene);
 			primaryStage.show();

@@ -7,8 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="232.0" prefWidth="410.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="gimyejin.PickController">
+<AnchorPane prefHeight="232.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gimyejin.PickController">
    <children>
       <Text layoutX="141.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="아이템 뽑기">
          <font>
@@ -18,11 +17,13 @@
       <Button layoutX="257.0" layoutY="112.0" mnemonicParsing="false" onAction="#pickup" prefHeight="59.0" prefWidth="120.0" text="뽑기" />
       <TextField fx:id="chargeMoney" layoutX="23.0" layoutY="130.0" promptText="충전 금액" />
       <Button layoutX="168.0" layoutY="130.0" mnemonicParsing="false" onAction="#charge" text="충전" />
-      <Label fx:id="money" layoutX="116.0" layoutY="98.0" text="현재 금액" />
+      <Label fx:id="money" layoutX="116.0" layoutY="98.0" text="0" />
       <Text layoutX="52.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="현재 잔액:" />
       <Label fx:id="userName" layoutX="125.0" layoutY="67.0" text="name" />
       <Text layoutX="164.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="님의 아이템 뽑기 입니다." />
       <Button layoutX="23.0" layoutY="169.0" mnemonicParsing="false" onAction="#item" text="현재 아이템 확인" />
       <Label fx:id="myitem" layoutX="23.0" layoutY="203.0" text="소지물품내역" />
+      <Text layoutX="141.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="코인" />
+      <Text layoutX="269.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="!!! 1회당 100코인 !!!" />
    </children>
 </AnchorPane>

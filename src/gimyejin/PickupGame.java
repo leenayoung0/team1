@@ -108,11 +108,11 @@ public class PickupGame extends Print {
 	public void pickup() {
 		int ran = (int) (Math.random() * 100) + 1;
 		if (ran == 2) {
-			System.out.println("!!!대 성공!!!");;
+			System.out.println("!!!대 성공!!!");
 			System.out.println(item.get(14));
 			coin +=2000;
 		} else if (ran > 2 && ran < 11) {
-			System.out.println("!!성공!!");;
+			System.out.println("!!성공!!");
 			int random = (int) (Math.random() * 3) + 11;
 			System.out.println(item.get(random));
 			inMyItem(random);
